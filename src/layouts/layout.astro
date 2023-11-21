@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Hotjar from "../components/Hotjar.astro";
 ---
 
 <html lang="es">
@@ -9,9 +10,14 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Mobile Legends Counter | Latino</title>
+    <meta
+      name="description"
+      content="Aprende a contrarrestar héroes de Mobile legends con esta página"
+    />
+    <Hotjar />
   </head>
-  <body>
-    <main class="h-screen max-w-screen-sm flex items-center justify-center">
+  <body class="min-h-screen flex items-center justify-center p-4">
+    <main class="max-w-screen-sm">
       <slot />
     </main>
   </body>
