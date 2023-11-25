@@ -1,36 +1,39 @@
 ---
 import Layout from "../layouts/layout.astro";
-import logo from "../assets/lunox-logo.png";
-import { Image } from "astro:assets";
+import Content from "../components/Content"
 ---
-
 <Layout>
-  <div class="flex flex-col text-sm items-center justify-center space-y-3">
-    <h1 class="text-xl text-center">
-      ¡Sitio web en construcción… ¡Manténganse sintonizados!
-    </h1>
-    <p class="text-[#9c9c9c] mt-2">Cómprame un café en:</p>
-    <div class="flex items-center justify-center gap-5">
-      <a
-        href="https://www.buymeacoffee.com/lunox"
-        target="_blank"
-        rel="noreferrer noopener nofollow"
-        class="hover:text-gray-400"
-      >
-        buymeacoffee.com
-      </a>
-      <a
-        href="https://ko-fi.com/lunox"
-        target="_blank"
-        rel="noreferrer noopener nofollow"
-        class="hover:text-gray-400"
-      >
-        ko-fi.com
-      </a>
+  <div class="flex flex-col justify-center items-center text-sm text-center space-y-5 mb-5">
+    <div class="space-y-2">
+      <div>
+      <h1 class="text-xl sm:text-2xl">
+        <strong>Mobile Legends:</strong> Aprende a Seleccionar y Contrarrestar Héroes
+      </h1>
+      <h2 class="text-base sm:text-lg opacity-75">
+        Guía definitiva y práctica para subir a Gloria Mítica en Mobile Legends
+      </h2>
+      </div>
+      <hr />
+      <div>
+      <p class="opacity-50">
+        En la fase de selección de héroes, visita esta página y elige primero
+        el rol y héroe que tu oponente ha seleccionado. Evalúa cuidadosamente los
+        mejores héroes disponibles, optando por los que domines para formar 
+        un equipo sólido y lograr contrarrestar eficazmente a tus adversarios.
+        <br />La elección sabia es la clave para la supremacía.
+      </p>
+      </div>
     </div>
-    <figure class="flex flex-col items-center justify-center mt-5">
-      <Image src={logo} alt="My logo" width="40" height="40" loading="lazy" />
-      <figcaption class="font-thin text-xs">Lunox</figcaption>
-    </figure>
+
+      <Content client:load />
+
+    <div class="text-start">
+      <p class="font-semibold">IMPORTANTE:</p>
+      <p class="opacity-75 font-semibold">Recomendamos seleccionar héroes que estén en el meta.</p>
+      <p class="opacity-50">
+       En Mobile Legends, la cooperación y la comunicación efectiva con tu equipo son factores cruciales para alcanzar la victoria.
+      </p>
+    </div>
+    <hr class="w-full" />
   </div>
 </Layout>

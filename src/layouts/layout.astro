@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Hotjar from "../components/Hotjar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="es">
@@ -15,11 +16,19 @@ import Hotjar from "../components/Hotjar.astro";
       content="Aprende a contrarrestar héroes de Mobile legends con esta página"
     />
     <Hotjar />
-    <meta name="google-site-verification" content="dEimDCP5YwOGTUNy4_NVM7EBmBCnWxkDgqRKe7jxgkQ" />
+    <meta
+      name="google-site-verification"
+      content="dEimDCP5YwOGTUNy4_NVM7EBmBCnWxkDgqRKe7jxgkQ"
+    />
   </head>
-  <body class="min-h-screen flex items-center justify-center p-4">
-    <main class="max-w-screen-sm">
+  <body
+    class="min-h-screen flex flex-col items-center p-4 mt-3 sm:mt-10"
+  >
+    <main class="max-w-screen-md">
       <slot />
     </main>
+    <footer>
+      <Footer />
+    </footer>
   </body>
 </html>
