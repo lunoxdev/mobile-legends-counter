@@ -1,4 +1,7 @@
-body{
-    background-color: black;
-    color: white;
+@import "@fontsource-variable/montserrat";
+
+body {
+  font-family: "Montserrat Variable", sans-serif;
+  background-color: black;
+  color: white;
 }
