@@ -28,7 +28,7 @@ const Roles = ({ selectedRole, setContentActive }: Types) => {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "eaa875da99msh44bbee5b9b4a44cp1a3793jsnf95f8037d264",
+            "c30b8e2ccamshab751f9f08221d8p1babb0jsna7471e5b9358",
           "X-RapidAPI-Host": "unofficial-mobile-legends.p.rapidapi.com",
         },
       };
