@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import Hotjar from "../components/Hotjar.astro";
-import Footer from "../components/Footer.astro";
 
 const metadata = {
   title: "Mobile Legends Counter: Lista de héroes, counters, consejos y más.",
@@ -22,7 +21,7 @@ const metadata = {
     <meta name="viewport" content="width=device-width" />
     <title>{metadata.title}</title>
     <meta name="description" content={metadata.description} />
-    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="canonical" href={metadata.url} />
     <Hotjar />
 
@@ -41,17 +40,12 @@ const metadata = {
     <meta name="twitter:title" content={metadata.title} />
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={metadata.urlimg} />
-    <meta name="twitter:creator" content={metadata.creator}>
+    <meta name="twitter:creator" content={metadata.creator} />
     <meta name="twitter:site" content={metadata.url} />
   </head>
-  <body
-    class="min-h-screen flex flex-col items-center p-4 mt-3 sm:mt-10"
-  >
+  <body class="min-h-screen flex flex-col items-center p-4 mt-3 justify-center">
     <main class="max-w-full sm:max-w-screen-md mx-auto">
       <slot />
     </main>
-    <footer>
-      <Footer />
-    </footer>
   </body>
 </html>
